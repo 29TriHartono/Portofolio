@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portofolio/static/css/main.cb1c70cd.css",
-    "main.js": "/Portofolio/static/js/main.89b592b7.js",
-    "static/js/787.c97c7d0e.chunk.js": "/Portofolio/static/js/787.c97c7d0e.chunk.js",
+    "main.js": "/Portofolio/static/js/main.184f27c6.js",
+    "static/js/787.b7af92ad.chunk.js": "/Portofolio/static/js/787.b7af92ad.chunk.js",
     "static/media/RumahImpian.png": "/Portofolio/static/media/RumahImpian.543d8eac853dab8c5684.png",
     "static/media/JustTravel.png": "/Portofolio/static/media/JustTravel.d671a1ccbb093f214a79.png",
     "static/media/naufalDua.png": "/Portofolio/static/media/naufalDua.8f9b74bc9b53cedadfaa.png",
@@ -10,11 +10,11 @@
     "static/media/TesFoto.jpg": "/Portofolio/static/media/TesFoto.ec741efc6a8b28a4baec.jpg",
     "index.html": "/Portofolio/index.html",
     "main.cb1c70cd.css.map": "/Portofolio/static/css/main.cb1c70cd.css.map",
-    "main.89b592b7.js.map": "/Portofolio/static/js/main.89b592b7.js.map",
-    "787.c97c7d0e.chunk.js.map": "/Portofolio/static/js/787.c97c7d0e.chunk.js.map"
+    "main.184f27c6.js.map": "/Portofolio/static/js/main.184f27c6.js.map",
+    "787.b7af92ad.chunk.js.map": "/Portofolio/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb1c70cd.css",
-    "static/js/main.89b592b7.js"
+    "static/js/main.184f27c6.js"
   ]
 }
