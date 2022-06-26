@@ -22,7 +22,7 @@ export default function Skills() {
   }, [inView]);
 
   const variants = {
-    hidden: { x: '100%' },
+    hidden: { x: '280%' },
     visible: {
       x: 0,
       transition: {
