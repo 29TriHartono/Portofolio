@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 function Profile() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
   });
   const animation = useAnimation();
   useEffect(() => {
@@ -18,18 +18,18 @@ function Profile() {
   }, [inView]);
 
   const variants = {
-    hidden: { scale: 0 },
+    hidden: { x: '-100%' },
     visible: {
-      scale: 1,
+      x: 0,
       transition: {
-        duration: 1.2,
+        duration: 1,
       },
     },
   };
   const variantsImg = {
-    hidden: { scale: 0 },
+    hidden: { x: '100%' },
     visible: {
-      scale: 1,
+      x: 0,
       transition: {
         duration: 1,
         type: 'spring',

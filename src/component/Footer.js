@@ -1,6 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-scroll';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export default function Footer() {
   const form = useRef();
@@ -20,13 +22,38 @@ export default function Footer() {
     e.target.reset();
   };
 
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible');
+    }
+    if (!inView) {
+      animation.start('hidden');
+    }
+    // console.log('use Effect hook, inView =', inView);
+  }, [inView]);
+
+  const variants = {
+    hidden: { y: '50%', opacity: 0, transition: { duration: 1 } },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <>
-      <div className="md:flex flex-col items-center gap-4 px-setting py-10 relative" id="Contact">
-        <div className="absolute top-0 rounded-md bg-colorBackground dark:bg-gray-900 border-2 border-gray-900 p-2 dark:border-slate-200">
+      <div ref={ref} className="md:flex flex-col items-center gap-4 px-setting py-10 relative" id="Contact">
+        <div className="absolute top-0 rounded-md bg-colorBackground dark:bg-gray-900 border-2 border-gray-900 p-2 dark:border-slate-200 z-20">
           <h1 className="mb-2 dark:text-white text-gray-900">Contact Me</h1>
         </div>
-        <div className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 py-6 px-4 md:px-8 md:py-10 rounded-md">
+        <motion.div animate={animation} initial="hidden" variants={variants} className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 py-6 px-4 md:px-8 md:py-10 rounded-md z-0">
           <form className="flex flex-col gap-2 items-center justify-center px-4" ref={form} onSubmit={sendEmail}>
             <div className="w-full">
               <label>Name</label>
@@ -59,7 +86,7 @@ export default function Footer() {
             </div>
             <input type="submit" value="Send" className="w-full bg-gray-900 dark:bg-black/50 py-2 cursor-pointer mt-2 rounded-md border-2 border-slate-200 text-white " />
           </form>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-col w-full  px-setting bg-colorBackground dark:bg-black/50 ">
         <div className="flex flex-col md:flex-row justify-between w-full gap-2 py-6 ">
