@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portofolio/static/css/main.50d3983e.css",
-    "main.js": "/Portofolio/static/js/main.98844490.js",
+    "main.js": "/Portofolio/static/js/main.d9862469.js",
     "static/js/787.b7af92ad.chunk.js": "/Portofolio/static/js/787.b7af92ad.chunk.js",
     "static/media/RumahImpian.png": "/Portofolio/static/media/RumahImpian.543d8eac853dab8c5684.png",
     "static/media/JustTravel.png": "/Portofolio/static/media/JustTravel.d671a1ccbb093f214a79.png",
@@ -11,11 +11,11 @@
     "static/media/TesFoto.jpg": "/Portofolio/static/media/TesFoto.ec741efc6a8b28a4baec.jpg",
     "index.html": "/Portofolio/index.html",
     "main.50d3983e.css.map": "/Portofolio/static/css/main.50d3983e.css.map",
-    "main.98844490.js.map": "/Portofolio/static/js/main.98844490.js.map",
+    "main.d9862469.js.map": "/Portofolio/static/js/main.d9862469.js.map",
     "787.b7af92ad.chunk.js.map": "/Portofolio/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50d3983e.css",
-    "static/js/main.98844490.js"
+    "static/js/main.d9862469.js"
   ]
 }
