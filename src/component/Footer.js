@@ -133,7 +133,7 @@ export default function Footer() {
 
               <div className="mx-4 flex flex-col cursor-pointer gap-3 2xl:text-2xl no-underline">
                 {NavbarLink.map((item, index) => (
-                  <Link className="effect-hover" to={item.url} spy={true} smooth={true} offset={-100} duration={500}>
+                  <Link key={index} className="effect-hover" to={item.url} spy={true} smooth={true} offset={-100} duration={500}>
                     {item.navname}
                   </Link>
                 ))}

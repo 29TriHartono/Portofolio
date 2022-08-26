@@ -46,7 +46,7 @@ function Navbar() {
       animate={{ y: 0 }}
       initial={{ y: '-100%' }}
       transition={{ duration: 2 }}
-      className={navbar ? 'bg-colorBackground dark:bg-gray-900 shadow-md 2xl:shadow-none 2xl:w-3/4 duration-1000 w-full justify-between h-14 md:h-16 fixed z-20 top-0' : 'bg-transparent h-14 md:h-16 fixed z-40 top-0 w-full 2xl:w-3/4'}
+      className={navbar ? 'bg-colorBackground dark:bg-gray-900 shadow-md 2xl:shadow-none 2xl:w-3/4 duration-1000 w-full justify-between h-14 md:h-16 fixed z-40 top-0' : 'bg-transparent h-14 md:h-16 fixed z-40 top-0 w-full 2xl:w-3/4'}
     >
       <div className="flex mx-3 md:mx-8 lg:mx-28 px-2 lg:px-4 items-center justify-between h-full relative z-40">
         <Link to="Home" spy={true} smooth={true} duration={500}>

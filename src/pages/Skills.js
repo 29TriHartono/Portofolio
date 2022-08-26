@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Program from '../Skills/Program';
-import Office from '../Skills/Office';
-import Design from '../Skills/Design';
+import Program from './Skills/Program';
+import Office from './Skills/Office';
+import Design from './Skills/Design';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

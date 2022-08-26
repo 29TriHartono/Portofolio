@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CardWeb from '../Project/CardWeb';
+import CardWeb from './Project/CardWeb';
 
 function Project() {
   const [isActive, setIsActive] = useState('Web');

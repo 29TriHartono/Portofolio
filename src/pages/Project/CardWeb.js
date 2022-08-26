@@ -1,9 +1,9 @@
 import Card from './Card';
-import naufalSatu from '../Img/naufalSatu.png';
-import naufalDua from '../Img/naufalDua.png';
-import JustTravel from '../Img/JustTravel.png';
-import RumahImpian from '../Img/RumahImpian.png';
-import Nfttheme from '../Img/Nft-img.png';
+import naufalSatu from '../../Img/naufalSatu.png';
+import naufalDua from '../../Img/naufalDua.png';
+import JustTravel from '../../Img/JustTravel.png';
+import RumahImpian from '../../Img/RumahImpian.png';
+import Nfttheme from '../../Img/Nft-img.png';
 
 function CardWeb() {
   return (

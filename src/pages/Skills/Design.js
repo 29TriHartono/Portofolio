@@ -1,5 +1,5 @@
 import React from 'react';
-import Figma from '../Img/Figma.png';
+import Figma from '../../Img/Figma.png';
 import CardSkills from './cardSkills';
 import { motion } from 'framer-motion';
 function Design() {

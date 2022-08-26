@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import Powerpoint from '../Img/powerpoint.png';
-import Word from '../Img/word.png';
-import Excel from '../Img/excel.png';
+import Powerpoint from '../../Img/powerpoint.png';
+import Word from '../../Img/word.png';
+import Excel from '../../Img/excel.png';
 import CardSkills from './cardSkills';
 import { motion } from 'framer-motion';
 

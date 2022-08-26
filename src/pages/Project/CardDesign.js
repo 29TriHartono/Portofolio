@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import JustTravel from '../Img/JustTravel.png';
 import RumahImpian from '../Img/RumahImpian.png';
